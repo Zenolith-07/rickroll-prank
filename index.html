@@ -2,52 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>System Breach!</title>
+  <title>System Lock Alert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: url('https://i.ibb.co/84RCnLw/scary-bg.jpg') no-repeat center center fixed;
+      font-family: 'Segoe UI', sans-serif;
+      color: #00FF00;
+      background: url('https://img.freepik.com/free-vector/hacker-background-with-glowing-text_23-2148571642.jpg?w=1060&t=st=1717233599~exp=1717237199~hmac=ac123e25d9d8a6dbbe78c4ab9b9b7e30d4f027e3aef62bc6c1fffd10c94aa93f') no-repeat center center fixed;
       background-size: cover;
-      font-family: 'Courier New', monospace;
-      color: #ff0000;
-      text-shadow: 1px 1px 5px black;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff3333;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px red;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      text-align: center;
+      line-height: 1.6;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      border: 2px solid #ff0000;
     }
 
     .zeno {
       position: absolute;
       top: 20px;
       right: 30px;
-      color: #0f0;
-      font-weight: bold;
-      font-size: 24px;
+      font-size: 1.2rem;
+      color: #00ffff;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid #00ffff;
     }
 
-    .logo {
-      margin-bottom: 20px;
+    .redirect {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      color: #ffcc00;
     }
 
-    .message {
-      font-size: 32px;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .link {
-      margin-top: 20px;
-      color: cyan;
-      font-size: 18px;
+    a {
+      color: #00ccff;
+      text-decoration: underline;
     }
   </style>
 
-  <!-- Redirect to Rickroll after 12 seconds -->
   <script>
     setTimeout(() => {
       window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
@@ -55,16 +73,16 @@
   </script>
 </head>
 <body>
-  <div class="zeno">Zeno</div>
-  <div class="logo">
-    <img src="https://i.ibb.co/3B3G1Wy/anonymous-logo.png" alt="Zeno Logo" width="100">
-  </div>
-  <div class="message">
-    ⚠️ Your device was compromised and is locked. <br><br>
-    🔒 Security Breach Detected.
-  </div>
-  <div class="link">
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Click here to learn more</a>
+  <div class="zeno">Zenolith</div>
+
+  <div class="overlay">
+    <h1>⚠️ SYSTEM SECURITY BREACH ⚠️</h1>
+    <p>
+      Your device has been locked due to multiple unauthorized access attempts. System protocols have detected abnormal behavior consistent with intrusion activities. All files and processes have been temporarily disabled while your system is under security investigation. For your safety, this device will remain locked until further verification is completed. Any attempt to reboot or bypass this lock may result in permanent data loss.
+    </p>
+    <div class="redirect">
+      <p>If you believe this is a mistake, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">click here to verify your identity</a>.</p>
+    </div>
   </div>
 </body>
 </html>
